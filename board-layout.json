@@ -1,210 +1,306 @@
 [
     [
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "rook",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "knight",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "bishop",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "queen",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "king",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "bishop",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "knight",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "rook",
+            "piece-color": "black"
         }
     ],
     [
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "black"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "black"
         }
     ],
     [
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         }
     ],
     [
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         }
     ],
     [
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         }
     ],
     [
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": null
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": null
         }
     ],
     [
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "pawn",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "pawn",
+            "piece-color": "white"
         }
     ],
     [
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "rook",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "bishop",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "knight",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "queen",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "king",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "knight",
+            "piece-color": "white"
         },
         {
-            "color": "secondary"
+            "box-color": "secondary",
+            "piece": "bishop",
+            "piece-color": "white"
         },
         {
-            "color": "primary"
+            "box-color": "primary",
+            "piece": "rook",
+            "piece-color": "white"
         }
     ]
 ]

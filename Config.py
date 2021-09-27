@@ -16,8 +16,8 @@ class Config:
         self.win = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         pygame.display.set_caption("Chess")
 
-        self.COLOR1 = (255, 255, 255)
-        self.COLOR2 = (152, 78, 222)
+        self.COLOR1 = (241, 242, 233)
+        self.COLOR2 = (47, 168, 146)
 
         self.clock = pygame.time.Clock()
         self.FPS = 60

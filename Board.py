@@ -1,6 +1,13 @@
 import pygame
 import json
 
+from Pieces.Pawn import Pawn
+from Pieces.Rook import Rook
+from Pieces.Knight import Knight
+from Pieces.Bishop import Bishop
+from Pieces.King import King
+from Pieces.Queen import Queen
+
 
 class Board:
     def __init__(self, config):
@@ -24,12 +31,34 @@ class Board:
 
         for row_num, row in enumerate(self.board):
             for col_num, col in enumerate(row):
-                rect = pygame.Rect(col_num * self.settings.BLOCK_SIZE, row_num * self.settings.BLOCK_SIZE, self.settings.BLOCK_SIZE, self.settings.BLOCK_SIZE)
+                rect = pygame.Rect(
+                    col_num * self.settings.BLOCK_SIZE,
+                    row_num * self.settings.BLOCK_SIZE,
+                    self.settings.BLOCK_SIZE,
+                    self.settings.BLOCK_SIZE
+                )
                 self.board[row_num][col_num]["rect"] = rect
-                if col["color"] == "primary":
-                    self.board[row_num][col_num]["color"] = self.settings.COLOR1
-                elif col["color"] == "secondary":
-                    self.board[row_num][col_num]["color"] = self.settings.COLOR2
+
+                if col["box-color"] == "primary":
+                    self.board[row_num][col_num]["box-color"] = self.settings.COLOR1
+                elif col["box-color"] == "secondary":
+                    self.board[row_num][col_num]["box-color"] = self.settings.COLOR2
+
+                if col["piece"]:
+                    if col["piece"] == "pawn":
+                        self.board[row_num][col_num]["piece"] = Pawn(col["piece-color"], self.settings)
+                    elif col["piece"] == "rook":
+                        self.board[row_num][col_num]["piece"] = Rook(col["piece-color"], self.settings)
+                    elif col["piece"] == "knight":
+                        self.board[row_num][col_num]["piece"] = Knight(col["piece-color"], self.settings)
+                    elif col["piece"] == "bishop":
+                        self.board[row_num][col_num]["piece"] = Bishop(col["piece-color"], self.settings)
+                    elif col["piece"] == "king":
+                        self.board[row_num][col_num]["piece"] = King(col["piece-color"], self.settings)
+                    elif col["piece"] == "queen":
+                        self.board[row_num][col_num]["piece"] = Queen(col["piece-color"], self.settings)
+
+                    del self.board[row_num][col_num]["piece-color"]
 
     def draw_window(self):
         """
@@ -39,7 +68,10 @@ class Board:
 
         for row in self.board:
             for box in row:
-                pygame.draw.rect(self.settings.win, box["color"], box["rect"])
+                pygame.draw.rect(self.settings.win, box["box-color"], box["rect"])
+
+                if box["piece"]:
+                    self.settings.win.blit(box["piece"].IMAGE, box["rect"])
 
     def event_loop(self):
         """
