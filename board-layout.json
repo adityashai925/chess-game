@@ -7,12 +7,12 @@
         },
         {
             "box-color": "secondary",
-            "piece": "knight",
+            "piece": "bishop",
             "piece-color": "black"
         },
         {
             "box-color": "primary",
-            "piece": "bishop",
+            "piece": "knight",
             "piece-color": "black"
         },
         {
@@ -27,12 +27,12 @@
         },
         {
             "box-color": "secondary",
-            "piece": "bishop",
+            "piece": "knight",
             "piece-color": "black"
         },
         {
             "box-color": "primary",
-            "piece": "knight",
+            "piece": "bishop",
             "piece-color": "black"
         },
         {
@@ -269,12 +269,12 @@
         },
         {
             "box-color": "primary",
-            "piece": "bishop",
+            "piece": "knight",
             "piece-color": "white"
         },
         {
             "box-color": "secondary",
-            "piece": "knight",
+            "piece": "bishop",
             "piece-color": "white"
         },
         {
@@ -289,12 +289,12 @@
         },
         {
             "box-color": "primary",
-            "piece": "knight",
+            "piece": "bishop",
             "piece-color": "white"
         },
         {
             "box-color": "secondary",
-            "piece": "bishop",
+            "piece": "knight",
             "piece-color": "white"
         },
         {
