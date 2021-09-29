@@ -10,7 +10,7 @@ from Pieces.Queen import Queen
 
 
 class Board:
-    def __init__(self, config):
+    def __init__(self, config, player1_name, player2_name):
         """
         Has methods for running the game.
         """
@@ -22,6 +22,9 @@ class Board:
         self.surface = pygame.Surface((self.settings.BLOCK_SIZE * 8, self.settings.BLOCK_SIZE * 8))
 
         self.running = True
+
+        self.PLAYER1_TEXT = self.settings.player_name_font.render(player1_name, True, (0, 0, 0))
+        self.PLAYER2_TEXT = self.settings.player_name_font.render(player2_name, True, (0, 0, 0))
 
     def generate_board(self):
         """
@@ -76,7 +79,9 @@ class Board:
                 if box["piece"]:
                     self.surface.blit(box["piece"].IMAGE, box["rect"])
 
-        self.settings.win.blit(self.surface, (self.settings.BLOCK_SIZE // 2, self.settings.BLOCK_SIZE * 1.5))
+        self.settings.win.blit(self.surface, (self.settings.BLOCK_SIZE // 2, self.settings.BLOCK_SIZE * 2))
+        self.settings.win.blit(self.PLAYER1_TEXT, self.settings.PLAYER1_TEXT_POS)
+        self.settings.win.blit(self.PLAYER2_TEXT, self.settings.PLAYER2_TEXT_POS)
 
     def event_loop(self):
         """
