@@ -19,6 +19,8 @@ class Board:
         self.LAYOUT_FILE_NAME = "board-layout.json"
         self.generate_board()
 
+        self.surface = pygame.Surface((self.settings.BLOCK_SIZE * 8, self.settings.BLOCK_SIZE * 8))
+
         self.running = True
 
     def generate_board(self):
@@ -64,14 +66,17 @@ class Board:
         """
         Draws the window but does not update it.
         """
-        self.settings.win.fill((255, 255, 255))
+        self.settings.win.fill(self.settings.BG_COLOR)
+        pygame.draw.rect(self.settings.win, self.settings.BOARD_BOUNDARY_COLOR, self.settings.BOUNDARY_RECT)
 
         for row in self.board:
             for box in row:
-                pygame.draw.rect(self.settings.win, box["box-color"], box["rect"])
+                pygame.draw.rect(self.surface, box["box-color"], box["rect"])
 
                 if box["piece"]:
-                    self.settings.win.blit(box["piece"].IMAGE, box["rect"])
+                    self.surface.blit(box["piece"].IMAGE, box["rect"])
+
+        self.settings.win.blit(self.surface, (self.settings.BLOCK_SIZE // 2, self.settings.BLOCK_SIZE * 1.5))
 
     def event_loop(self):
         """
